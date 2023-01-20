@@ -6,6 +6,8 @@
 					<content>
 					<Label text="Label"></Label>
 					<Input id="EBELN" value="{Model>PurchaseOrder}" />
+					
+					
 					</content>
 				</Page>
 			</pages>
