@@ -5,8 +5,33 @@
 				<Page id="page" title="{i18n>title}">
 					<content>
 					<Label text="Label"></Label>
-					<Input id="EBELN" value="{Model>PurchaseOrder}" />
-					
+					<Input id="EBELN" value="{oDataModel>PurchaseOrder}" />
+					<Table id="idPoList" items="{path: 'jsonModel>/A_PurchaseOrder'}" mode="Navigation" alternateRowColors="true" growing="true" updateStarted="onFirstThreshold" updateFinished="onLastThreshold">
+            <headerToolbar>
+                <OverflowToolbar>
+                    <content>
+                        <Title text="Lista ODA" level="H2" />
+                        <Text id="tableCounter" level="H2" />
+                    </content>
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column demandPopin="true" minScreenWidth="Tablet">
+                    <Text text="{ODA}" />
+                </Column>
+                <Column>
+                    <Text text="{TIPO ODA}" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem vAlign="Middle" type="Navigation" demandPopin="true" minScreenWidth="Tablet">
+                    <cells>
+                        <Text text="{jsonModel>PurchaseOrder}" />
+                        <Text text="{jsonModel>PurchaseOrderType}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
 					
 					</content>
 				</Page>

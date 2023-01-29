@@ -66,15 +66,21 @@
 					"bundleName": "DEMO.DEMO.i18n.i18n"
 				}
 			},
-			"Model": {
+			"oDataModel": {
 				"type": "sap.ui.model.odata.v2.ODataModel",
 				"settings": {
 					"defaultOperationMode": "Server",
 					"defaultBindingMode": "OneWay",
-					"defaultCountMode": "Request"
+					"defaultCountMode": "Request",
+					"useBatch": true
 				},
 				"dataSource": "Purchase_Order",
 				"preload": true
+			},
+			"jsonModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"preload": false
 			}
 		},
 		"resources": {
