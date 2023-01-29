@@ -72,7 +72,7 @@
 					"defaultOperationMode": "Server",
 					"defaultBindingMode": "OneWay",
 					"defaultCountMode": "Request",
-					"useBatch": true
+					"useBatch": false
 				},
 				"dataSource": "Purchase_Order",
 				"preload": true

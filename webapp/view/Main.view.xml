@@ -17,10 +17,10 @@
             </headerToolbar>
             <columns>
                 <Column demandPopin="true" minScreenWidth="Tablet">
-                    <Text text="{ODA}" />
+                    <Text text="ODA" />
                 </Column>
                 <Column>
-                    <Text text="{TIPO ODA}" />
+                    <Text text="TIPO ODA" />
                 </Column>
             </columns>
             <items>
