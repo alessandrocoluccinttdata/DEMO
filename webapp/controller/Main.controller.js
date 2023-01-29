@@ -6,8 +6,10 @@ sap.ui.define([
 
 	return Controller.extend("DEMO.DEMO.controller.Main", {
 		onInit: function () {
+			// Binding diretto con oData
 			let oPurchase = this.getView().byId("EBELN");
 			oPurchase.bindElement("oDataModel>/A_PurchaseOrder('4500000011')");
+			// Valorizzazione Modello Json con array
 			let arrayPo = [];
 			let elementPo1 = { PurchaseOrder : 11 , PurchaseOrderType : "test"};
 			arrayPo.push(elementPo1);
