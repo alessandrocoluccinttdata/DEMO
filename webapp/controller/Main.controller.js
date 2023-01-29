@@ -8,11 +8,10 @@ sap.ui.define([
 		onInit: function () {
 			let oPurchase = this.getView().byId("EBELN");
 			oPurchase.bindElement("oDataModel>/A_PurchaseOrder('4500000011')");
-			
-			var Json = {
-				"PurchaseOrder": 11
-			};
-			this.getView().getModel("jsonModel").setProperty("/A_PurchaseOrder", "oDataModel>/A_PurchaseOrder('4500000011')");
+			let arrayPo = [];
+			let elementPo1 = { PurchaseOrder : 11 , PurchaseOrderType : "test"};
+			arrayPo.push(elementPo1);
+			this.getView().getModel("jsonModel").setProperty("/A_PurchaseOrder", arrayPo);
 		}
 	});
 });
