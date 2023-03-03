@@ -34,7 +34,7 @@
 							</items>
 						</Table>
 
-						<Table id="idCarSellList" mode="Navigation" alternateRowColors="true" growing="true"
+						<Table id="idCarSellList" items="{path: '/vendite_auto'}" mode="Navigation" alternateRowColors="true" growing="true"
 							updateStarted="onFirstThreshold" updateFinished="onLastThreshold">
 							<headerToolbar>
 								<OverflowToolbar>
@@ -46,17 +46,17 @@
 							</headerToolbar>
 							<columns>
 								<Column demandPopin="true" minScreenWidth="Tablet">
-									<Text text="Marca"/>
+									<Text text="marca"/>
 								</Column>
 								<Column>
-									<Text text="Modello"/>
+									<Text text="modello"/>
 								</Column>
 							</columns>
 							<items>
 								<ColumnListItem vAlign="Middle" type="Navigation" demandPopin="true" minScreenWidth="Tablet">
 									<cells>
-										<Text text="{jsonModel>marca}"/>
-										<Text text="{jsonModel>modello}"/>
+										<Text text="{marca}"/>
+										<Text text="{modello}"/>
 									</cells>
 								</ColumnListItem>
 							</items>

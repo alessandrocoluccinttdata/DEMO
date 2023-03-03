@@ -24,15 +24,7 @@ sap.ui.define(
         let OCarlist = this.getView().byId("idCarSellList");
         OCarlist.setModel(oModel);
 
-        OCarlist.bindItems({
-          path: "/vendite_auto",
-          template: new sap.m.ColumnListItem({
-            cells: [
-              new sap.m.Text({ text: "{marca}" }),
-              new sap.m.Text({ text: "{modello}" }),
-            ],
-          }),
-        });
+
       },
     });
   }
