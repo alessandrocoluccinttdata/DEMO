@@ -33,6 +33,35 @@
 								</ColumnListItem>
 							</items>
 						</Table>
+
+						<Table id="idCarSellList" items="{path: 'jsonModel>/vendite_auto'}" mode="Navigation" alternateRowColors="true" growing="true"
+							updateStarted="onFirstThreshold" updateFinished="onLastThreshold">
+							<headerToolbar>
+								<OverflowToolbar>
+									<content>
+										<Title text="Vendite Auto" level="H2"/>
+										<Text id="tableCounterCarSellList" level="H2"/>
+									</content>
+								</OverflowToolbar>
+							</headerToolbar>
+							<columns>
+								<Column demandPopin="true" minScreenWidth="Tablet">
+									<Text text="Marca"/>
+								</Column>
+								<Column>
+									<Text text="Modello"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem vAlign="Middle" type="Navigation" demandPopin="true" minScreenWidth="Tablet">
+									<cells>
+										<Text text="{jsonModel>Marca}"/>
+										<Text text="{jsonModel>Modello}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+
 					</content>
 				</Page>
 			</pages>
