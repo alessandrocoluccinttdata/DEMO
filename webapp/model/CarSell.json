@@ -1,0 +1,44 @@
+{
+    "vendite_auto": [
+      {
+        "marca": "Toyota",
+        "modello": "Corolla",
+        "anno": 2020,
+        "prezzo": 20000,
+        "colore": "Bianco",
+        "caratteristiche": {
+          "cambio": "Automatico",
+          "cilindrata": 1600,
+          "potenza": 132
+        },
+        "data_vendita": "2022-01-15"
+      },
+      {
+        "marca": "Ford",
+        "modello": "Mustang",
+        "anno": 2019,
+        "prezzo": 40000,
+        "colore": "Rosso",
+        "caratteristiche": {
+          "cambio": "Manuale",
+          "cilindrata": 5000,
+          "potenza": 460
+        },
+        "data_vendita": "2022-02-20"
+      },
+      {
+        "marca": "BMW",
+        "modello": "Serie 3",
+        "anno": 2021,
+        "prezzo": 35000,
+        "colore": "Nero",
+        "caratteristiche": {
+          "cambio": "Automatico",
+          "cilindrata": 2000,
+          "potenza": 190
+        },
+        "data_vendita": "2022-03-01"
+      }
+    ]
+  }
+  
