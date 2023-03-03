@@ -34,7 +34,7 @@
 							</items>
 						</Table>
 
-						<Table id="idCarSellList" items="{path: 'jsonModel>/vendite_auto'}" mode="Navigation" alternateRowColors="true" growing="true"
+						<Table id="idCarSellList" mode="Navigation" alternateRowColors="true" growing="true"
 							updateStarted="onFirstThreshold" updateFinished="onLastThreshold">
 							<headerToolbar>
 								<OverflowToolbar>
@@ -55,8 +55,8 @@
 							<items>
 								<ColumnListItem vAlign="Middle" type="Navigation" demandPopin="true" minScreenWidth="Tablet">
 									<cells>
-										<Text text="{jsonModel>Marca}"/>
-										<Text text="{jsonModel>Modello}"/>
+										<Text text="{jsonModel>marca}"/>
+										<Text text="{jsonModel>modello}"/>
 									</cells>
 								</ColumnListItem>
 							</items>
